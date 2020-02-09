@@ -20,6 +20,21 @@ namespace PolyPattern
 			bitArrayPosition += valueBitCount;
 		}
 
+		public static byte GetBits(this BitArray bitArray, ref int bitArrayPosition, int valueBitCount)
+		{
+			if (valueBitCount > 8)
+				throw new ArgumentException("Value was outside of 8-bit integer bit count.", nameof(valueBitCount));
+
+			byte value = 0;
+			for (int i = 0; i < valueBitCount; i++)
+				if (bitArray.Get(bitArrayPosition + i))
+					value += (byte)Math.Pow(2, valueBitCount - 1 - i);
+
+			bitArrayPosition += valueBitCount;
+
+			return value;
+		}
+
 		public static BitArray Prepend(this BitArray current, BitArray before)
 		{
 			bool[] bools = new bool[current.Count + before.Count];

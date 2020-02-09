@@ -31,10 +31,5 @@ namespace PolyPattern
 			array.SetBits(ref arrayPos, (byte)(Length - 1), ChannelNoteLengthSize);
 			return array;
 		}
-
-		public BitArray NotesToBits()
-		{
-			return new BitArray(Notes);
-		}
 	}
 }
