@@ -9,7 +9,7 @@ namespace PolyPattern.Patterns
 {
 	public class PatternSimple
 	{
-		public static readonly int ChannelCountSize = 2; // The maximum amount of limbs that can be used by a human is 4 (2-bit integer).
+		public static readonly int ChannelCountSize = 2; // The maximum amount of limbs that can be used by a human is 4, which fits in a 2-bit integer.
 
 		public ChannelSimple[] Channels { get; }
 
