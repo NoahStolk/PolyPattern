@@ -1,7 +1,8 @@
-﻿using System;
+﻿using PolyPattern.Utils;
+using System;
 using System.Collections;
 
-namespace PolyPattern
+namespace PolyPattern.Channels
 {
 	public class ChannelSimple
 	{

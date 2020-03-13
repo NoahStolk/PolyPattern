@@ -1,4 +1,6 @@
-﻿using PolyPattern;
+﻿using PolyPattern.Channels;
+using PolyPattern.Patterns;
+using PolyPattern.Utils;
 using System;
 using System.Collections;
 using System.IO;

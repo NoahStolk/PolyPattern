@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace PolyPattern
+namespace PolyPattern.Utils
 {
 	public static class Extensions
 	{

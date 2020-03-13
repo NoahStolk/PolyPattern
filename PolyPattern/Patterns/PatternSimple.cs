@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using PolyPattern.Channels;
+using PolyPattern.Utils;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PolyPattern
+namespace PolyPattern.Patterns
 {
 	public class PatternSimple
 	{
