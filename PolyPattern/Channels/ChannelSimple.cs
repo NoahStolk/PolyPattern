@@ -6,7 +6,7 @@ namespace PolyPattern.Channels
 {
 	public class ChannelSimple
 	{
-		public static readonly int ChannelNoteLengthSize = 4; // Length of a channel can be max 16 (4-bit integer).
+		public static readonly int ChannelNoteLengthSize = 4; // Length of a channel can be max 16 (4-bit unsigned integer).
 
 		public byte Length { get; }
 		public bool[] Notes { get; }
