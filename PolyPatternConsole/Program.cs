@@ -1,4 +1,5 @@
 ﻿using PolyPattern.Channels;
+using PolyPattern.Midi;
 using PolyPattern.Patterns;
 using PolyPattern.Utils;
 using System;
@@ -33,6 +34,8 @@ namespace PolyPatternConsole
 			// Read pattern bits.
 			PatternSimple patternIn = PatternSimple.FromBitArray(new BitArray(File.ReadAllBytes("Test")));
 			Console.WriteLine(patternIn);
+
+			MidiWriter.Write(null);
 		}
 	}
 }

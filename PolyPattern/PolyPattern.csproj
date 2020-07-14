@@ -2,4 +2,7 @@
 	<PropertyGroup>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="managed-midi" Version="1.9.14" />
+	</ItemGroup>
 </Project>
